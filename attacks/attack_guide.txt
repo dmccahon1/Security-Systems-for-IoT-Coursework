@@ -1,0 +1,47 @@
+This document sets out locations of files changed within the attack.  
+The local file (found within this zip) and contiki filepath are defined.
+To implement attack, replace the local file with the contiki file. 
+
+No Attack
+---------
+File Name: rpl-icm6.c
+local file: /attacks/rpl-icmp6.c
+Contiki File: /core/net/rpl/rpl-icmp6.c
+
+File Name: rpl-timers.c
+Local File: /attacks/rpl-timers.c
+Contiki File: /core/net/rpl/rpl-timers.c
+
+File Name: uip6.c
+Local File: /attacks/uip6.c
+Contiki File: /core/net/ipv6/uip6.c
+
+Sinkhole
+---------
+Local File: /attacks/sinkhole/uip6.c
+Contiki File: /core/net/ipv6/uip6.c
+Lines: 1243-1255 
+
+Rank Attack
+--------
+Local File: /attacks/rank/rpl-icmp6.c
+Contiki File: /core/net/rpl/rpl-icmp6.c
+line: 456-466
+
+Version
+--------
+Local File: /attacks/sink/rpl-icmp6.c
+Contiki File: /core/net/rpl/rpl-icmp6.c
+Lines: 449-458
+
+DIO Suppression
+--------
+Local File: /attacks/sink/rpl-icmp6.c
+Contiki File: /core/net/rpl/rpl-icmp6.c
+Lines: 449-456, 461-466, 480-486
+
+DIS Attack
+--------
+Local File: /attacks/sink/rpl-timers.c
+Contiki File: /core/net/rpl/rpl-timers
+Lines: 66-75
